@@ -32,5 +32,5 @@ The long short-term memory is an artificial recurrent neural network (RNN) that 
 We used the LSTM network with an Embedding layer to perform the necessary binary classification. In order to derive Embedding weights, we stripped the vectors encoded by the GloVe file and created a matrix of weights. We selected a batch size of 32 to satisfy a balance between its ability to generalize and runtime. To avoid overfitting, we added a callback for early stopping that monitors validation accuracy with a preset patience of 5 epochs. After analyzing the trends of validation accuracy and loss, we settled on 30 epochs following a plateau.
 
 ## Results
-
+![](results.png)
 
